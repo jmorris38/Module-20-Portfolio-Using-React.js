@@ -1,0 +1,89 @@
+/* About component styles. */
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh; /* Make section taller. */
+  padding: 2rem; /* Add more space around content. */
+  margin-bottom: 2rem; /* Move the section higher. */
+  margin-top: 4rem;
+  flex-direction: row; /* Keep image and text side by side. */
+  text-align: left; /* Align text to the left in larger screens. */
+}
+
+.about-img {
+  flex: 0.0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2rem; /* Space between image and text. */
+  margin-bottom: 2rem;
+  position: relative; /* Ensure the image can be pushed left with absolute positioning. */
+  left: -8rem; /* Push image to the left. */
+}
+
+.about-img img {
+  /*border-radius: 50%;
+  width: 300px;  Increase width.
+  height: 300px; /* Increase height.
+  object-fit: cover;
+  border: 5px solid #274c77; /* Border color to match theme. */
+}
+
+.about-description {
+  flex: 1;
+  padding: 2rem; /* Increase padding for more space inside the box. */
+  border: 2px solid #274c77; /* Border around the description. */
+  border-radius: 10px; /* Rounded corners. */
+  background-color: #8b8c89; /* Background color of the box. */
+  max-width: 62.5rem; /* Increase max width for larger content area. */
+  text-align: left; /* Align text to the left for larger screens. */
+  position: relative; /* Ensure the description box stays in place. */
+}
+
+.about-description h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.about-description h2 {
+  font-size: 1.75rem; /* Increase font size to better fit the box. */
+  margin-bottom: 1rem;
+  color: #ffffff;
+  text-overflow: ellipsis; /* Add ellipsis if text overflows. */
+}
+
+.about-description p {
+  font-size: 1.25rem;
+  color: #ffffff;
+}
+
+/* Adjustments for smaller screens. */
+@media screen and (max-width: 992px) {
+  .about {
+    flex-direction: column; /* Stack image and text vertically. */
+    text-align: center; /* Center text on smaller screens. */
+  }
+
+  .about-img {
+    margin-right: 0; /* Remove right margin when stacked vertically. */
+    margin-bottom: 1rem; /* Space between image and text. */
+    left: 0; /* Reset left positioning when stacked vertically. */
+  }
+
+  .about-img img {
+    width: 200px; /* Adjust width for smaller screens. */
+    height: 200px; /* Adjust height for smaller screens. */
+  }
+
+  .about-description {
+    width: 100%; /* Ensure description takes full width. */
+  }
+
+  .about-description h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+  }
+}

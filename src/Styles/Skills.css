@@ -1,0 +1,15 @@
+/* Skills component styles. */
+.skills-container {
+  display: flex; /* Arrange icons horizontally. */
+  align-items: center; /* Vertically center icons. */
+  gap: 1.5rem; /* Space between icons. */
+  padding: 0.75rem; /* Padding around icons. */
+  border-radius: 1rem; /* Rounded corners for the container. */
+  background-color: #e7ecef;
+}
+
+.skill-icon {
+  width: 9rem;
+  height: 3rem; /* Increase image size. */
+  border-radius: 0.5rem; /* Add rounded corners to the image. */
+}

@@ -1,0 +1,20 @@
+/* PDF component styles. */
+.pdf-container {
+  height: 36rem;
+  overflow-y: auto;
+  margin: 1rem;
+  width: 40rem;
+  border-radius: 1rem;
+  background-color: #274c77;
+  padding: 0.75rem;
+}
+
+.pdf-page {
+  margin-bottom: 0.5rem; /* Adjust the margin to control the space between pages. */
+}
+
+@media (max-width: 768px) {
+  .pdf-container {
+    width: 100%; /* Make the container full width on smaller screens. */
+  }
+}
