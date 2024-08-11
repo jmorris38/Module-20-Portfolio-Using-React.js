@@ -1,0 +1,11 @@
+/* Global styles. */
+body,
+html,
+#root {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  background-color: #e7ecef;
+}
